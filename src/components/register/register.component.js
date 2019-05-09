@@ -7,6 +7,11 @@ import {IconButton} from "../common/icon-button/icon-button.component";
 import googleIcon from "../../logo_google.svg";
 
 export class Register extends React.Component {
+    signUp() {
+        signInWithGoogle().then(() => {
+            this.props.history.push(`/profile`);
+        });
+    }
     render() {
         return (
             <div>
