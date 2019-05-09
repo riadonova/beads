@@ -1,6 +1,7 @@
 import React from 'react';
 import logo from "../../logo_beads.svg";
 import {Link} from "react-router-dom";
+import {signInWithGoogle} from "../../services/auth.service";
 
 export class Register extends React.Component {
     render() {
@@ -15,8 +16,8 @@ export class Register extends React.Component {
                     </div>
                 </div>
                 <div className='header'>Sign up</div>
+                <button onClick={signInWithGoogle} className="btn btn-dark">Sign Up With Google</button>
             </div>
-
         )
     }
 }
