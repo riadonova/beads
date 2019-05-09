@@ -3,15 +3,16 @@ import React from 'react';
 @branch({
     userProfile: ['user'],
 })
-class Profile extends React.Component {
+export class Profile extends React.Component {
     render() {
         const {userProfile} = this.props;
-        debugger;
         return (
             <div>
                 <h1>Profile</h1>
+                <img alt={userProfile.displayName} src={userProfile.photoURL} />
+                <p>{userProfile.displayName}</p>
+                <p>{userProfile.email}</p>
             </div>
         )
     }
 }
-export {Profile};
