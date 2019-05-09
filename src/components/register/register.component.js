@@ -4,6 +4,11 @@ import {Link} from "react-router-dom";
 import {signInWithGoogle} from "../../services/auth.service";
 
 export class Register extends React.Component {
+    signUp() {
+        signInWithGoogle().then(() => {
+            this.props.history.push(`/profile`);
+        });
+    }
     render() {
         return (
             <div>
@@ -16,7 +21,7 @@ export class Register extends React.Component {
                     </div>
                 </div>
                 <div className='header'>Sign up</div>
-                <button onClick={signInWithGoogle} className="btn btn-dark">Sign Up With Google</button>
+                <button onClick={()=> this.signUp()} className="btn btn-dark">Sign Up With Google</button>
             </div>
         )
     }
