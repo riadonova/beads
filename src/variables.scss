@@ -1,5 +1,7 @@
 $primary: #DB62A0;
-$btn-padding-x-sm: 20px;
-$btn-padding-y-sm: 2px;
-$btn-padding-x: 20px;
-$btn-padding-y: 3px;
+$btn-padding-x: 23px;
+$btn-padding-y: 2px;
+$btn-padding-x-sm: $btn-padding-x * 0.875;
+$btn-padding-y-sm: $btn-padding-y * 0.875;
+$btn-padding-x-lg: $btn-padding-x * 1.25;
+$btn-padding-y-lg: $btn-padding-y * 1.25;

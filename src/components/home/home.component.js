@@ -4,19 +4,13 @@ import './home.component.scss';
 
 import logo from '../../logo_beads.svg';
 import piano from '../../piano.svg';
+import {UnautorizedHeader} from "../common/unautorized-header/unautorized-header";
 
 export class Home extends React.Component {
     render() {
         return (
             <div>
-                <div className="row">
-                    <div className="col-7">
-                        <img className="logo" src={logo} alt='logo'/>
-                    </div>
-                    <div className="col-5">
-                        <Link className="btn-login btn btn-outline-primary btn-sm" to="/login">Login</Link>
-                    </div>
-                </div>
+               <UnautorizedHeader/>
                 <div className="block">
                     <div className="row">
                         <div className="col-7">
@@ -24,7 +18,7 @@ export class Home extends React.Component {
                             <h2 >non-standard solution for communication </h2>
                         </div>
                         <div className="col-5">
-                            <Link className="btn-register btn btn-primary" to="/register">Sign up</Link>
+                            <Link className="btn-register btn btn-primary " to="/register">Sign up</Link>
                         </div>
                     </div>
                 </div>
